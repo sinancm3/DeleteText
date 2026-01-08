@@ -9,7 +9,6 @@ app.use(Express.json());
 MongoshConnect();
 
 app.get("/", async (req, res) => {
-
   await Data.find().then((re) => {
     console.log(re);
     res.json({ datas: re });
@@ -42,4 +41,4 @@ app.delete("/delete", async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log(`port onn`));
+app.listen(3000, () => console.log(`port on`));
